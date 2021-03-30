@@ -1,6 +1,3 @@
-
-
-
 struct HashTable<T> {
 
     arr: [Vec<T>; 13], // using 13 just cause its a random prime
@@ -61,6 +58,10 @@ impl HashTable<String> { // using String not &str because want ownership
         found
     }
 
+}
+
+trait hash {
+    // TODO: Plan is to impl a trait for each data type and use that in the generic HashTable
 }
 
 
